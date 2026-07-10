@@ -1,0 +1,116 @@
+*{
+    box-sizing:border-box;
+}
+
+main img {
+    width:1000px;
+    height:300px;
+}
+
+header img{
+   
+    width:14rem;
+    height:4rem;
+    /* 1rem is often equal to 16px */
+}
+.teal-text{
+    color:#087a98
+}
+body{
+    font-family:sans-serif;
+    font-size:1.25rem;
+    /* color:blue; //the whole text color become blue , but the h1 and h2 color will not chage because we are making it more specific.
+    //this concept is of inheritance */
+    line-height:1.6;    
+    /* line heigth is the only thing in css that uses unitless value.
+    line-height - controls the space between the lines inside a block of text
+    margin - the space between individual blocks of text.
+*/
+}
+
+h1{
+    font-family:Arial, Helvetica, sans-serif;   /*font stack  */
+    color:black;
+    font-size: 4.25rem;
+    text-align :center;   /*  because the default value for text align is start */
+        @media(width > 720px){
+            font-size:7.5 rem;
+        }
+}
+h2{
+    color:#CB721C;
+    /* color : red;   //this color will win : its cascading */
+}
+/* h2{  // this will win because the more declare later will win
+    color:yellow;
+} */
+a{
+    color:green;
+}
+a:hover , a:focus-visible{
+    color:rgb(0, 128, 111)
+}
+.near-footer-image{
+    inline-size: 215%;
+}
+img{
+    display:block;
+    max-inline-size:100%;
+    /* 100 % if the parent */
+}
+ul{
+    list-style:square;
+}
+/*pseudo element*/
+li::marker{
+    color:red;
+}
+section{
+    margin-block:3.25rem;
+}
+header{
+    display: flex;
+    justify-content:space-evenly;
+    gap:20px;
+
+}
+.primary-navigation ul{
+    display:flex;
+    gap:10px;
+
+    list-style:none;
+    margin:0;
+    padding:0;
+
+}
+.wrapper{
+    max-inline-size:1000px;
+    margin-inline:auto;
+}
+.two-column-layout{
+    display:grid;
+    gap:60px;
+    grid-template-columns:1fr 1fr
+}
+.teal-background{
+    background-color:#087A98;
+    color:#ffffff;
+    border:6px solid #0b4a5a;
+    padding:20px;
+}
+.teal-background strong{
+    color:yellow;
+}
+.climber-bg{
+    padding:25px;
+    border:6px solid #0b4a5a;
+    color:black;
+    background-color:antiquewhite;
+    background-image:url("images/boulderingGym.jpg") ;
+    background-size: cover;
+    background-position: center;
+}
+footer{
+    text-align :center;
+}
+
