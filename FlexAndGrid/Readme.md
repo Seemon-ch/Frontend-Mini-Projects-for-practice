@@ -1,4 +1,4 @@
-# Basic Pet Adoption Page 
+# Use of CSS flex and gird properties.
 A Page consist the use of various CSS properties.
 # Technologies Used
 HTML5
