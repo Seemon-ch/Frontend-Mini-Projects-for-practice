@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photogallery Navbar</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to Get Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <!-- Link from cdnjs.com to include icons from font-awesome. -->
+    <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" 
+    />
+</head>
+<body>
+    <div class="main_box">
+        <!-- filal  liye checkbox banya hai kuki abhi js connect nahi hai. toh checkbox ki help se action monitor kr rhe hai. -->
+        <input type="checkbox" id="check">
+            
+                    <div class="btn_one">
+                        <!-- label for checkbox, But insted of having text we displayed a icon. -->
+                        <label for="check">
+                            <!-- humburger icon form font awesome -->
+                            <i class="fa-solid fa-bars"></i>
+                        </label>      
+                    </div>
+                <!-- For side bar menu -->
+            <div class="sidebar_menu">
+                    <div class="logo">
+                        <a href="#">Photogallery</a>
+                    </div>
+                    
+                <!-- Main menu -->
+                <div class="menu">
+                    <ul>
+                        <li><i class="fa-solid fa-image"></i><a href="#">Gallery</a></li>
+                        <li><i class="fa-solid fa-square-up-right"></i><a href="#">Shortcuts</a></li>
+                        <li><i class="fa-solid fa-photo-film"></i><a href="#">Exhibits</a></li>
+                        <li><i class="fa-chisel fa-regular fa-calendar"></i><a href="#">Events</a></li>
+                        <li><i class="fa-solid fa-store"></i><a href="#">Store</a></li>
+                        <li><i class="fa-solid fa-circle-user"></i><a href="#">Contact</a></li>
+                        <li><i class="fa-regular fa-comment"></i><a href="#">Feedback</a></li>
+                    </ul>
+                </div>
+                <!-- social media panel -->
+                <div class="social_media">
+                    <ul>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+
+                    </ul>
+                </div>
+            </div>
+    </div>
+            
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>
