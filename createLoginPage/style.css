@@ -1,0 +1,70 @@
+*{
+    margin:0;          /*Strips away the browser's messy default spacing*/
+    padding:0;
+    box-sizing:border-box; /*Fixes layout math. Adding padding or borders will shrink the space inside the element instead of accidentally making the whole box bigger.*/
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    min-height:100vh; /* "vh" as Viewport Height (essentially, percentage of the screen height).100vh means exactly 100% of the visible screen height.
+                        This tells the browser: "Even if my login box is small, make the background stretch to fill at least 100% of the user's total screen height." */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg , #291c8e 0%, #a01489 100%); /*135deg angle makes the color shift diagonally*/
+    position: relative;
+    overflow: hidden; /*This hides the browser's scrollbars. Because we are making a fixed login screen */
+} 
+.wrapper{
+    border:1px solid rgb(4, 83, 51);
+    box-shadow: 0 0 20px black;
+    border-radius:4px;
+    text-align:center;
+    padding:20px;
+    background-color: rgb(79, 204, 163);
+    width:100%;
+    max-width:380px;
+    overflow:hidden; /*Agar box ke andar ka koi element box se bahar nikalne ki koshish karega, toh yeh use clip dega */
+}
+form h3{
+    letter-spacing: 3px;
+    font-weight:700; /*bold*/
+}
+form{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+.loginbtn{
+    padding:6px;
+    background-color: rgb(231, 232, 234);
+    opacity:0.5;
+
+}
+.loginbtn:hover{
+    opacity:1;
+}
+.registerbtn{
+    padding:6px;
+    background-color: rgb(11, 122, 82);
+}
+.input-field{
+    border:1px solid rgb(13, 145, 26);
+    border-radius:4px;
+    padding: 12px;
+}
+.input-field input{
+    background:none;   /*remove default background color*/
+    outline:none; /*remove default outline that appears on clicking by default*/
+    border:none ; /*remove default border*/
+    color:white; /*type color is white*/
+    width:80% ; /*typing area width*/
+}
+.input-field .icon{
+    color:#8b8899;
+    margin-right:8px;
+    font-size:0.9rem;
+}
+a{
+    text-decoration:none;
+    color:rgb(102, 15, 95);
+}
