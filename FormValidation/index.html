@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <form autocomplete="off" action="" novalidate>
+
+            <input type="text" placeholder="name" id="name">
+            <small id="forName">Your name should of greater than 2 character</small>
+
+            <input type="email" placeholder="email" id="email">
+            <small id="email-msg"></small>
+
+            <input type="password" placeholder="password" id="pass">
+            <small id="password-msg"></small>
+
+            <select id="gender">
+                <option value="Select gender" selected disabled hidden>Select Gender</option>
+                <option value="male">male</option>
+                <option value="male">female</option>
+                <option value="other">Other</option>
+
+            </select>
+            <textarea placeholder="Tell us about u..."></textarea>
+            <input type="submit">
+
+        </form>
+
+        <div id="result-message"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
