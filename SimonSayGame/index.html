@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Say Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Simon Say Game</h1>
+        <h2>Press Any key(from keyboard) to Start the Game</h2>
+        <div class="btn-container">
+            <div class="line1">
+                <div class="btn red" type="button " id="red"></div>
+                <div class="btn green" type="button" id="green" ></div>
+            </div>
+            <div class="line2">
+                <div class="btn yellow" type="button" id="yellow"></div>
+                <div class="btn purple" type="button" id="purple"></div>
+            </div>
+        </div>
+
+    </div>
+    <div class="rules">
+        <h4>RULES OF GAME:</h4>
+        <ol>
+            <li>Press any key to start the game.</li>
+            <li>The game flashes one random color.</li>
+            <li>Click the same color that the game flashed.</li>
+            <li>If your click is correct, the game moves to the next level.</li>
+            <li>At each new level, the game adds one new color to the existing sequence.</li>
+            <li>You must repeat the entire sequence in the correct order.</li>
+            <li>If you click a wrong color or click in the wrong order, the game ends.</li>
+            <li>Your score is the highest level you reached.</li>
+            <li>Press any key again to restart after a game over.</li>
+        </ol>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

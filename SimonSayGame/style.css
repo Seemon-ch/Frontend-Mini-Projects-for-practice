@@ -1,0 +1,47 @@
+body{
+    background:black;
+
+}
+.wrapper{
+    text-align:center;
+}
+.btn{
+    height:200px;
+    width:200px;
+    border-radius:20%;
+    border : 10px solid #ffffff77;
+    margin:2.5rem;
+}
+.btn-container{
+    display:flex;
+    justify-content:center;
+
+}
+h1,h2{
+    color:#fff;
+}
+.yellow{
+    background-color: rgb(202, 202, 32);
+}
+.red{
+    background-color: rgb(197, 50, 50);
+}
+.purple{
+    background-color: rgb(112, 25, 112);
+}
+.green{
+    background-color: rgb(38, 97, 38);
+}
+
+.rules{
+    color:#fff;
+    text-align:none;
+    padding:4rem;
+}
+.flash{
+    background-color: #fff;
+}
+
+.userflash{
+    background-color: rgb(95, 136, 95);
+}
