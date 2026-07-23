@@ -14,14 +14,14 @@ body{
 .sidebar{
     background-color: black;
     width:340px;
-    border-radius:1rem;  /* 1 rem=16px;*/
+    border-radius:1rem;  
     margin-right:0.5rem;
 }
 .main-content{
     background-color:#121212;
     flex:1;
     border-radius:1rem;
-    /* we only want scroll bar here */
+    
     overflow:auto;
     margin-right:0.25rem;
     padding:0 1.5rem 0 1.5rem;
@@ -130,7 +130,7 @@ a{
     justify-content: space-between;
     align-items:center;
     padding:1rem 0 1rem 0;
-    z-index:10;  /*Because we want to show it on top*/
+    z-index:10;  
 }
 .sticky-nav-icons{
     margin-left:0.75rem;
@@ -261,7 +261,7 @@ a{
     background-color:transparent;
     cursor:pointer;
 }
-/* refer [quirsmode] documentation to know more about radio button(sliders css)  styling. */
+
 .progress-bar::-webkit-slider-runnable-track{
     background-color:#ddd;
     border-radius:100px;
