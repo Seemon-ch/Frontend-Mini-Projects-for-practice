@@ -282,7 +282,6 @@ button:focus-visible {
         padding: var(--space-sm) var(--space-md);
         gap: var(--space-sm);
     }
-
     .main-nav {
         position: relative;
     }
